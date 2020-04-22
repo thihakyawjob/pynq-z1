@@ -1,0 +1,126 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 29357
+License: Customer
+
+Current time: 	Wed Apr 22 14:47:45 SRET 2020
+Time zone: 	Singapore Standard Time (Asia/Singapore)
+
+OS: Ubuntu
+OS Version: 5.3.0-46-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 265 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	twinborn
+User home directory: /home/twinborn
+User working directory: /home/twinborn/Data/FPGA/PYNQ/Gitupload/pynq-z1/xadc_pjt
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2018.3
+RDI_DATADIR: /opt/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: /home/twinborn/.Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: /home/twinborn/.Xilinx/Vivado/2018.3/
+Vivado layouts directory: /home/twinborn/.Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	/home/twinborn/Data/FPGA/PYNQ/Gitupload/pynq-z1/xadc_pjt/vivado.log
+Vivado journal file location: 	/home/twinborn/Data/FPGA/PYNQ/Gitupload/pynq-z1/xadc_pjt/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-29357-twinborn-PC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@ERIN40001
+XILINX_DSP: /opt/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2018.3
+XILINX_SDK: /opt/Xilinx/SDK/2018.3
+XILINX_VIVADO: /opt/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	225 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 933 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 89 MB (+91274kb) [00:00:06]
+// [Engine Memory]: 883 MB (+774076kb) [00:00:06]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: xadc_pjt.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project xadc_pjt.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 877 MB. GUI used memory: 45 MB. Current time: 4/22/20, 2:47:47 PM SRET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 110 MB (+17003kb) [00:00:12]
+// [Engine Memory]: 937 MB (+11044kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  3022 ms.
+// Tcl Message: open_project xadc_pjt.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/twinborn/Data/FPGA/PYNQ/xadc_pjt' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'. 
+// [Engine Memory]: 1,005 MB (+22115kb) [00:00:14]
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 6462.766 ; gain = 151.477 ; free physical = 5526 ; free virtual = 13537 
+// Project name: xadc_pjt; location: /home/twinborn/Data/FPGA/PYNQ/Gitupload/pynq-z1/xadc_pjt; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 124 MB (+8644kb) [00:00:16]
+// [Engine Memory]: 1,094 MB (+40333kb) [00:00:21]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (system_wrapper.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v)]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B (D, cp) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,116 MB. GUI used memory: 65 MB. Current time: 4/22/20, 2:48:07 PM SRET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_wrapper.v", 1); // k (j, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_wrapper.v", 1, true, false); // k (j, cp) - Popup Trigger
+selectCodeEditor("system_wrapper.v", 329, 281); // cl (w, cp)
