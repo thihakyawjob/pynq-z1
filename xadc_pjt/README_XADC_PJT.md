@@ -1,4 +1,4 @@
-# FPGA Project Using pynq-z1 Board
+# A Simple XADC Project
 ## Vivado Version: 2018.3
 ## Ubuntu 18.04
 
