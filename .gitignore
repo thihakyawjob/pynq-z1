@@ -8,3 +8,12 @@ xadc_pjt/xadc_pjt.sdk/xadc_testcode_bsp/*
 xadc_pjt/xadc_pjt.srcs/sources_1/bd/system/ip/*
 xadc_pjt/xadc_pjt.srcs/sources_1/bd/system/ipshared/*
 xadc_pjt/xadc_pjt.srcs/sources_1/bd/system/sim/*
+AXIStream/AXIStreamTest.cache/*
+AXIStream/.Xil/*
+AXIStream/AXIStreamTest.hw/webtalk/*
+AXIStream/AXIStreamTest.ip_user_files/sim_scripts/*
+AXIStream/AXIStreamTest.runs/.jobs/*
+AXIStream/AXIStreamTest.sdk/.metadata/*
+AXIStream/AXIStreamTest.sdk/fifo_test_bsp/*
+AXIStream/AXIStreamTest.sdk/helloworld_bsp/*
+ip_repo/edit_axistream_v1_0.cache/*

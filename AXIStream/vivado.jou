@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 11 13:59:53 2020
+# Process ID: 21422
+# Current directory: /home/twinborn/Data/FPGA/PYNQ/AXIStream
+# Command line: vivado AXIStreamTest.xpr
+# Log file: /home/twinborn/Data/FPGA/PYNQ/AXIStream/vivado.log
+# Journal file: /home/twinborn/Data/FPGA/PYNQ/AXIStream/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project AXIStreamTest.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd}
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axis_fifo_0_M00_AXIS}]
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axis_fifo_0_M00_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+startgroup
+set_property -dict [list CONFIG.C_BRAM_CNT {15.5} CONFIG.C_DATA_DEPTH {32768}] [get_bd_cells system_ila]
+endgroup
+save_bd_design
+validate_bd_design
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}]]
+file copy -force /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.sysdef /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf
+
+launch_sdk -workspace /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk -hwspec /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}]]
+open_bd_design {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd}
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {processing_system7_0_FCLK_CLK0 }]
+startgroup
+set_property -dict [list CONFIG.C_BRAM_CNT {41} CONFIG.C_MON_TYPE {MIX}] [get_bd_cells system_ila]
+endgroup
+connect_bd_net [get_bd_pins system_ila/probe0] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+startgroup
+set_property -dict [list CONFIG.C_BRAM_CNT {15.5} CONFIG.C_MON_TYPE {INTERFACE}] [get_bd_cells system_ila]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { processing_system7_0_FCLK_CLK0 } ]
+endgroup
+launch_sdk -workspace /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk -hwspec /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf
+save_wave_config {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/003017AC8218A}
+open_bd_design {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd}
+set_property  ip_repo_paths  {/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_async_fifo_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0} [current_project]
+update_ip_catalog
+ipx::edit_ip_in_project -upgrade true -name axis_fifo_v1_0_project -directory /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.tmp/axis_fifo_v1_0_project /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0/component.xml
+update_compile_order -fileset sources_1

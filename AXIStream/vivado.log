@@ -1,0 +1,370 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 11 13:59:53 2020
+# Process ID: 21422
+# Current directory: /home/twinborn/Data/FPGA/PYNQ/AXIStream
+# Command line: vivado AXIStreamTest.xpr
+# Log file: /home/twinborn/Data/FPGA/PYNQ/AXIStream/vivado.log
+# Journal file: /home/twinborn/Data/FPGA/PYNQ/AXIStream/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project AXIStreamTest.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_async_fifo_1.0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_async_fifo_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 6545.680 ; gain = 236.816 ; free physical = 4512 ; free virtual = 13259
+update_compile_order -fileset sources_1
+open_bd_design {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- user.org:user:axis_fifo:1.0 - axis_fifo_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:system_ila:1.1 - system_ila
+Successfully read diagram <system_top> from BD file </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 6692.781 ; gain = 0.000 ; free physical = 4356 ; free virtual = 13105
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axis_fifo_0_M00_AXIS}]
+true
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axis_fifo_0_M00_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Debug Automation : Re-customizing System ILA block '/system_ila' to mode INTERFACE, with 0 new slot interface pins and 0 new probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting interface connection /axis_fifo_0_M00_AXIS, to System ILA slot interface pin /system_ila/SLOT_0_AXIS for debug.
+startgroup
+set_property -dict [list CONFIG.C_BRAM_CNT {15.5} CONFIG.C_DATA_DEPTH {32768}] [get_bd_cells system_ila]
+endgroup
+save_bd_design
+Wrote  : </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+validate_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 7162.367 ; gain = 20.285 ; free physical = 4008 ; free virtual = 12724
+reset_run synth_1
+save_bd_design
+Wrote  : </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd> 
+launch_runs impl_1 -jobs 4
+INFO: [BD 41-1662] The design 'system_top.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+Exporting to file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_axi_smc_0/bd_0/hw_handoff/system_top_axi_smc_0.hwh
+Generated Block Design Tcl file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_axi_smc_0/bd_0/hw_handoff/system_top_axi_smc_0_bd.tcl
+Generated Hardware Definition File /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_axi_smc_0/bd_0/synth/system_top_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_fifo_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+Exporting to file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_system_ila_0/bd_0/hw_handoff/system_top_system_ila_0.hwh
+Generated Block Design Tcl file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_system_ila_0/bd_0/hw_handoff/system_top_system_ila_0_bd.tcl
+Generated Hardware Definition File /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_system_ila_0/bd_0/synth/system_top_system_ila_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_auto_pc_0/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/synth/system_top.hwdef
+[Mon May 11 14:02:19 2020] Launched synth_1...
+Run output will be captured here: /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/synth_1/runme.log
+[Mon May 11 14:02:19 2020] Launched impl_1...
+Run output will be captured here: /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 7464.590 ; gain = 154.707 ; free physical = 3829 ; free virtual = 12540
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 466 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8052.977 ; gain = 10.672 ; free physical = 2917 ; free virtual = 11856
+Restored from archive | CPU: 1.330000 secs | Memory: 18.879761 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8052.977 ; gain = 10.672 ; free physical = 2917 ; free virtual = 11856
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8052.977 ; gain = 0.000 ; free physical = 2921 ; free virtual = 11860
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 237 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 60 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 175 instances
+
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 8236.191 ; gain = 771.602 ; free physical = 2824 ; free virtual = 11764
+open_report: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 8248.340 ; gain = 12.148 ; free physical = 2788 ; free virtual = 11730
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017AC8218A
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+ERROR: [Vivado 12-4452] The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 
+ 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export.
+ 2. There are no block design hardware handoff files. Check the vivado log messages for more details. 
+ERROR: [Vivado 12-4452] The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 
+ 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export.
+ 2. There are no block design hardware handoff files. Check the vivado log messages for more details. 
+ERROR: [Vivado 12-4452] The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 
+ 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export.
+ 2. There are no block design hardware handoff files. Check the vivado log messages for more details. 
+ERROR: [Vivado 12-4452] The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 
+ 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export.
+ 2. There are no block design hardware handoff files. Check the vivado log messages for more details. 
+ERROR: [Vivado 12-4452] The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 
+ 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export.
+ 2. There are no block design hardware handoff files. Check the vivado log messages for more details. 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon May 11 14:23:48 2020] Launched impl_1...
+Run output will be captured here: /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/runme.log
+set_property PROBES.FILE {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}]]
+Processed interface axis_fifo_0_M00_AXIS_ila1_slot0
+file copy -force /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.sysdef /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf
+
+launch_sdk -workspace /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk -hwspec /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk -hwspec /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-May-11 14:31:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-May-11 14:31:12
+Processed interface axis_fifo_0_M00_AXIS_ila1_slot0
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd}
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {processing_system7_0_FCLK_CLK0 }]
+true
+startgroup
+set_property -dict [list CONFIG.C_BRAM_CNT {41} CONFIG.C_MON_TYPE {MIX}] [get_bd_cells system_ila]
+endgroup
+connect_bd_net [get_bd_pins system_ila/probe0] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+Wrote  : </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+ERROR: [BD 41-1805] Probe pin /system_ila/probe0 and clock pin /system_ila/clk of System ILA block /system_ila are connected to same source pin /processing_system7_0/FCLK_CLK0. System ILA block cannot debug a clock connection when it is driven at the same clock rate. Please disconnect this probe pin and connect it to a different System ILA block driven at a suitable clock rate
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+startgroup
+set_property -dict [list CONFIG.C_BRAM_CNT {15.5} CONFIG.C_MON_TYPE {INTERFACE}] [get_bd_cells system_ila]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { processing_system7_0_FCLK_CLK0 } ]
+endgroup
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk -hwspec /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk -hwspec /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+save_wave_config {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/003017AC8218A}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/003017AC8218A
+open_bd_design {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd}
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  {/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  {/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  {/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_async_fifo_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_async_fifo_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::edit_ip_in_project -upgrade true -name axis_fifo_v1_0_project -directory /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.tmp/axis_fifo_v1_0_project /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 9306.582 ; gain = 0.000 ; free physical = 191 ; free virtual = 9646
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_async_fifo_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0/hdl/axis_fifo_v1_0.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 9306.582 ; gain = 0.000 ; free physical = 184 ; free virtual = 9640
+update_compile_order -fileset sources_1

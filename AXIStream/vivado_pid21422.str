@@ -1,0 +1,1705 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 21422
+License: Customer
+
+Current time: 	Mon May 11 14:00:08 SRET 2020
+Time zone: 	Singapore Standard Time (Asia/Singapore)
+
+OS: Ubuntu
+OS Version: 5.3.0-51-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 93
+Available screens: 1
+Available disk space: 257 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	twinborn
+User home directory: /home/twinborn
+User working directory: /home/twinborn/Data/FPGA/PYNQ/AXIStream
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2018.3
+RDI_DATADIR: /opt/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: /home/twinborn/.Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: /home/twinborn/.Xilinx/Vivado/2018.3/
+Vivado layouts directory: /home/twinborn/.Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	/home/twinborn/Data/FPGA/PYNQ/AXIStream/vivado.log
+Vivado journal file location: 	/home/twinborn/Data/FPGA/PYNQ/AXIStream/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-21422-twinborn-PC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@ERIN40001
+XILINX_DSP: /opt/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2018.3
+XILINX_SDK: /opt/Xilinx/SDK/2018.3
+XILINX_VIVADO: /opt/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	203 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 917 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 98 MB (+99906kb) [00:00:06]
+// [Engine Memory]: 855 MB (+745093kb) [00:00:06]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: AXIStreamTest.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project AXIStreamTest.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 45 MB. Current time: 5/11/20, 2:00:11 PM SRET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 111 MB (+9050kb) [00:00:16]
+// [Engine Memory]: 1,009 MB (+116879kb) [00:00:16]
+// [GUI Memory]: 117 MB (+337kb) [00:00:17]
+// [GUI Memory]: 124 MB (+1175kb) [00:00:17]
+// [GUI Memory]: 135 MB (+4480kb) [00:00:18]
+// WARNING: HEventQueue.dispatchEvent() is taking  3068 ms.
+// Tcl Message: open_project AXIStreamTest.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 6545.680 ; gain = 236.816 ; free physical = 4512 ; free virtual = 13259 
+// Project name: AXIStreamTest; location: /home/twinborn/Data/FPGA/PYNQ/AXIStream; part: xc7z020clg400-1
+// [Engine Memory]: 1,093 MB (+34962kb) [00:00:20]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: open_bd_design {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd} 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0 Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0 Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc Adding cell -- user.org:user:axis_fifo:1.0 - axis_fifo_0 Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M Adding cell -- xilinx.com:ip:system_ila:1.1 - system_ila Successfully read diagram <system_top> from BD file </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 1,218 MB (+73727kb) [00:00:31]
+// TclEventType: RSB_CONNECTION_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1241 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,220 MB. GUI used memory: 131 MB. Current time: 5/11/20, 2:00:32 PM SRET
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 6692.781 ; gain = 0.000 ; free physical = 4356 ; free virtual = 13105 
+// 'bA' command handler elapsed time: 5 seconds
+dismissDialog("Open Block Design"); // bx (cp)
+// Elapsed time: 12 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 676, 178, 1150, 601, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, cp)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_DEBUG, "Debug"); // af (al, cp)
+// Tcl Command: 'set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axis_fifo_0_M00_AXIS}]'
+// [GUI Memory]: 152 MB (+11645kb) [00:00:49]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// bx (cp):  Debug : addNotify
+// Tcl Message: set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axis_fifo_0_M00_AXIS}] 
+// Tcl Message: true 
+dismissDialog("Debug"); // bx (cp)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 993ms to process. Increasing delay to 3000 ms.
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (ct, cp)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// [Engine Memory]: 1,284 MB (+5684kb) [00:00:54]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,285 MB. GUI used memory: 79 MB. Current time: 5/11/20, 2:00:56 PM SRET
+selectButton("OptionPane.button", "OK"); // JButton (C, I)
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (ct, cp)
+// w (cp): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Run Connection Automation"); // w (cp)
+// bx (cp):  Run Connection Automation : addNotify
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \                                                           [get_bd_intf_nets axis_fifo_0_M00_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \                                                          ] 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,449 MB (+105351kb) [00:01:07]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Debug Automation : Re-customizing System ILA block '/system_ila' to mode INTERFACE, with 0 new slot interface pins and 0 new probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation. Debug Automation : Connecting interface connection /axis_fifo_0_M00_AXIS, to System ILA slot interface pin /system_ila/SLOT_0_AXIS for debug. 
+dismissDialog("Run Connection Automation"); // bx (cp)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4638 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,508 MB. GUI used memory: 99 MB. Current time: 5/11/20, 2:01:23 PM SRET
+// Elapsed time: 19 seconds
+selectComboBox("Sample Data Depth (C_DATA_DEPTH)", "32768", 5); // E (C, r)
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_CLOSE_DIAGRAM
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// r (cp): Re-customize IP: addNotify
+// bx (r):  Customize IP : addNotify
+// Tcl Command: 'set_property -dict [list CONFIG.C_BRAM_CNT {15.5} CONFIG.C_DATA_DEPTH {32768}] [get_bd_cells system_ila]'
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_BRAM_CNT {15.5} CONFIG.C_DATA_DEPTH {32768}] [get_bd_cells system_ila] 
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bx (r)
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd>  Wrote  : </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  
+// [Engine Memory]: 1,547 MB (+26370kb) [00:01:33]
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Validate Design : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,634 MB. GUI used memory: 94 MB. Current time: 5/11/20, 2:01:46 PM SRET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,638 MB (+14387kb) [00:01:46]
+// TclEventType: RSB_PARAM_PROP
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 7162.367 ; gain = 20.285 ; free physical = 4008 ; free virtual = 12724 
+// Elapsed time: 13 seconds
+dismissDialog("Validate Design"); // bx (cp)
+selectButton("PAResourceTtoZ.ValidateRSBDesign_VALIDATION_SUCCESSFUL_THERE_NO_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd>  
+// f (cp): Launch Runs: addNotify
+dismissDialog("Save Constraints"); // bx (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// [Engine Memory]: 1,747 MB (+28129kb) [00:02:01]
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'system_top.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/synth/system_top.v VHDL Output written to : /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/sim/system_top.v VHDL Output written to : /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/hdl/system_top_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 . 
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,809 MB. GUI used memory: 87 MB. Current time: 5/11/20, 2:02:06 PM SRET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_axi_smc_0/bd_0/hw_handoff/system_top_axi_smc_0.hwh Generated Block Design Tcl file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_axi_smc_0/bd_0/hw_handoff/system_top_axi_smc_0_bd.tcl Generated Hardware Definition File /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_axi_smc_0/bd_0/synth/system_top_axi_smc_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc . INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_fifo_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_system_ila_0/bd_0/hw_handoff/system_top_system_ila_0.hwh Generated Block Design Tcl file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_system_ila_0/bd_0/hw_handoff/system_top_system_ila_0_bd.tcl Generated Hardware Definition File /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ip/system_top_system_ila_0/bd_0/synth/system_top_system_ila_0.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/hw_handoff/system_top.hwh Generated Block Design Tcl file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl Generated Hardware Definition File /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/synth/system_top.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// WARNING: HEventQueue.dispatchEvent() is taking  1462 ms.
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// [Engine Memory]: 1,902 MB (+71129kb) [00:02:18]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon May 11 14:02:19 2020] Launched synth_1... Run output will be captured here: /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/synth_1/runme.log [Mon May 11 14:02:19 2020] Launched impl_1... Run output will be captured here: /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 7464.590 ; gain = 154.707 ; free physical = 3829 ; free virtual = 12540 
+// Elapsed time: 18 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 1191 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 94 MB. Current time: 5/11/20, 2:22:16 PM SRET
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [Engine Memory]: 2,102 MB (+110281kb) [00:22:21]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,592 MB. GUI used memory: 94 MB. Current time: 5/11/20, 2:22:30 PM SRET
+// [Engine Memory]: 2,593 MB (+404047kb) [00:22:30]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /opt/Xilinx/Vivado/2018.3/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.9s
+// [Engine Memory]: 2,766 MB (+46012kb) [00:22:31]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.1s
+// Device: addNotify
+// [GUI Memory]: 162 MB (+2009kb) [00:22:36]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  5482 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 466 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8052.977 ; gain = 10.672 ; free physical = 2917 ; free virtual = 11856 
+// Tcl Message: Restored from archive | CPU: 1.330000 secs | Memory: 18.879761 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8052.977 ; gain = 10.672 ; free physical = 2917 ; free virtual = 11856 Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8052.977 ; gain = 0.000 ; free physical = 2921 ; free virtual = 11860 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 237 instances were transformed.   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 60 instances   RAM16X1D => RAM32X1D (RAMD32, RAMD32): 2 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 175 instances  
+// Tcl Message: INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 8236.191 ; gain = 771.602 ; free physical = 2824 ; free virtual = 11764 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 181 MB (+11455kb) [00:22:41]
+// [GUI Memory]: 191 MB (+589kb) [00:22:42]
+// [GUI Memory]: 203 MB (+2372kb) [00:22:44]
+// [GUI Memory]: 213 MB (+428kb) [00:22:44]
+// WARNING: HEventQueue.dispatchEvent() is taking  5147 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,774 MB. GUI used memory: 155 MB. Current time: 5/11/20, 2:22:46 PM SRET
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  2935 ms.
+// 'dQ' command handler elapsed time: 38 seconds
+// Elapsed time: 38 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// [Engine Memory]: 2,928 MB (+25204kb) [00:22:59]
+// bx (cp):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  6 2018-23:53:53     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017AC8218A 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,934 MB. GUI used memory: 157 MB. Current time: 5/11/20, 2:23:01 PM SRET
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1940 ms.
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 3,736 MB (+693358kb) [00:23:05]
+// WARNING: HEventQueue.dispatchEvent() is taking  1884 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+dismissDialog("Auto Connect"); // bx (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cp): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (Q, X): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// HOptionPane Warning: 'The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export. 2. There are no block design hardware handoff files. Check the vivado log messages for more details.  (Cannot Export Hardware)'
+selectButton("PAResourceItoN.NewExportHardwareDialog_CANNOT_EXPORT_HARDWARE_OK", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// HOptionPane Warning: 'The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export. 2. There are no block design hardware handoff files. Check the vivado log messages for more details.  (Cannot Export Hardware)'
+selectButton("PAResourceItoN.NewExportHardwareDialog_CANNOT_EXPORT_HARDWARE_OK", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// HOptionPane Warning: 'The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export. 2. There are no block design hardware handoff files. Check the vivado log messages for more details.  (Cannot Export Hardware)'
+selectButton("PAResourceItoN.NewExportHardwareDialog_CANNOT_EXPORT_HARDWARE_OK", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (X)
+// 'm' command handler elapsed time: 18 seconds
+dismissDialog("Export Hardware"); // X (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // af (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cp): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (Q, X): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// HOptionPane Warning: 'The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export. 2. There are no block design hardware handoff files. Check the vivado log messages for more details.  (Cannot Export Hardware)'
+selectButton("PAResourceItoN.NewExportHardwareDialog_CANNOT_EXPORT_HARDWARE_OK", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// HOptionPane Warning: 'The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export. 2. There are no block design hardware handoff files. Check the vivado log messages for more details.  (Cannot Export Hardware)'
+selectButton("PAResourceItoN.NewExportHardwareDialog_CANNOT_EXPORT_HARDWARE_OK", "OK"); // JButton (C, J)
+// 'm' command handler elapsed time: 5 seconds
+dismissDialog("Export Hardware"); // X (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon May 11 14:23:48 2020] Launched impl_1... Run output will be captured here: /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 67 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z020_1 (2) ; Programmed", 3, "xc7z020_1 (2)", 0, true); // t (Q, cp) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z020_1 (2) ; Programmed", 3, "xc7z020_1 (2)", 0, true, false, false, false, true, false); // t (Q, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [GUI Memory]: 228 MB (+4135kb) [00:25:07]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}]] 
+// Tcl Message: Processed interface axis_fifo_0_M00_AXIS_ila1_slot0 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,795 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:25:09 PM SRET
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cp): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (Q, X): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Export Hardware"); // X (cp)
+// Tcl Message: file copy -force /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.runs/impl_1/system_top_wrapper.sysdef /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cp): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cp)
+// Tcl Message: launch_sdk -workspace /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk -hwspec /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk -hwspec /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// Elapsed time: 340 seconds
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-May-11 14:31:03 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}] 
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_top_i/system_ila/inst/ila_lib"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-May-11 14:31:12 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,807 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:31:14 PM SRET
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Processed interface axis_fifo_0_M00_AXIS_ila1_slot0 
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 51 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,807 MB. GUI used memory: 215 MB. Current time: 5/11/20, 2:32:03 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,807 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:32:15 PM SRET
+selectButton(RDIResource.WaveformView_GOTO_CURSOR, "Waveform Viewer_waveformgotocursor"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.WaveformView_GOTO_LAST_TIME, "Waveform Viewer_RunAll"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_RunReset"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_NEXT_MARKER, "Waveform Viewer_waveformNextMarker"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,807 MB. GUI used memory: 170 MB. Current time: 5/11/20, 2:32:24 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,807 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:32:28 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,807 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:32:30 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_CURSOR, "Waveform Viewer_waveformgotocursor"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,808 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:32:42 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,813 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:32:44 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 12 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,813 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:32:55 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,813 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:32:58 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,813 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:32:59 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,813 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:33:00 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,813 MB. GUI used memory: 169 MB. Current time: 5/11/20, 2:33:02 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,813 MB. GUI used memory: 171 MB. Current time: 5/11/20, 2:33:02 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,813 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:33:08 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.WaveformView_ADD, "Waveform Viewer_new"); // B (f, cp)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_CANCEL, "Cancel"); // a (C, ResizableWindow)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 387, 238); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 32 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 503, 212); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 19 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : axis_fifo_0_M00_AXIS : Interface]", 0, true); // a (r, cp) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,848 MB. GUI used memory: 168 MB. Current time: 5/11/20, 2:34:06 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 319, 137); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 514, 156); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : axis_fifo_0_M00_AXIS : Interface, slot_0 : axis_fifo_0_M00_AXIS : T Channel, slot_0 : axis_fifo_0_M00_AXIS : TREADY]", 3, false); // a (r, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,848 MB. GUI used memory: 169 MB. Current time: 5/11/20, 2:34:18 PM SRET
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : axis_fifo_0_M00_AXIS : Interface, slot_0 : axis_fifo_0_M00_AXIS : T Channel, slot_0 : axis_fifo_0_M00_AXIS : TVALID]", 2, false); // a (r, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 88 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd} 
+dismissDialog("Open Block Design"); // bx (cp)
+// Elapsed time: 87 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 630, 474, 1150, 601, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, cp)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_DEBUG, "Debug"); // af (al, cp)
+// Tcl Command: 'set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {processing_system7_0_FCLK_CLK0 }]'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {processing_system7_0_FCLK_CLK0 }] 
+// Tcl Message: true 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4273 ms.
+// Elapsed time: 16 seconds
+selectComboBox("Monitor Type (C_MON_TYPE)", "MIX", 2); // E (C, r)
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_CLOSE_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  2847 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Tcl Command: 'set_property -dict [list CONFIG.C_BRAM_CNT {41} CONFIG.C_MON_TYPE {MIX}] [get_bd_cells system_ila]'
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_BRAM_CNT {41} CONFIG.C_MON_TYPE {MIX}] [get_bd_cells system_ila] 
+// r (cp): Re-customize IP: addNotify
+// bx (r):  Customize IP : addNotify
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// [GUI Memory]: 244 MB (+5574kb) [00:37:43]
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bx (r)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins system_ila/probe0] [get_bd_pins processing_system7_0/FCLK_CLK0] 
+// Elapsed time: 27 seconds
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd>  Wrote  : </home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1164ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1164 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,876 MB. GUI used memory: 185 MB. Current time: 5/11/20, 2:38:17 PM SRET
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: ERROR: [BD 41-1805] Probe pin /system_ila/probe0 and clock pin /system_ila/clk of System ILA block /system_ila are connected to same source pin /processing_system7_0/FCLK_CLK0. System ILA block cannot debug a clock connection when it is driven at the same clock rate. Please disconnect this probe pin and connect it to a different System ILA block driven at a suitable clock rate ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd  ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.  
+// aX (cp): Launch Run Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aX)
+dismissDialog("Launch Run Critical Messages"); // aX (cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3949 ms.
+selectComboBox("Monitor Type (C_MON_TYPE)", "INTERFACE", 1); // E (C, r)
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_CLOSE_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  2403 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Tcl Command: 'set_property -dict [list CONFIG.C_BRAM_CNT {15.5} CONFIG.C_MON_TYPE {INTERFACE}] [get_bd_cells system_ila]'
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_BRAM_CNT {15.5} CONFIG.C_MON_TYPE {INTERFACE}] [get_bd_cells system_ila] 
+// r (cp): Re-customize IP: addNotify
+// bx (r):  Customize IP : addNotify
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bx (r)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 614, 276, 1150, 601, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, cp)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CLEAR_DEBUG, "Clear Debug"); // af (al, cp)
+// Tcl Message: startgroup 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { processing_system7_0_FCLK_CLK0 } ] 
+// Tcl Message: endgroup 
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 31, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 514, 156); // n (o, cp)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 514, 156); // n (o, cp)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 514, 156); // n (o, cp)Waveform: addNotify
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cp): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+selectButton("PAResourceItoN.NewLaunchHardwareDialog_EXPORTED_HARDWARE_SYSTEM_OUT_OF_DATE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Launch SDK"); // aa (cp)
+// Tcl Message: launch_sdk -workspace /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk -hwspec /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk -hwspec /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.sdk/system_top_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 198, 247); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 39 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : axis_fifo_0_M00_AXIS : Interface]", 0, true); // a (r, cp) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 3,879 MB. GUI used memory: 196 MB. Current time: 5/11/20, 2:40:08 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_ADD, "Waveform Viewer_new"); // B (f, cp)
+// Elapsed time: 11 seconds
+setText("PAResourceOtoP.ProbesView_PROBES_TREE_SEARCH_FIELD", (String) null); // OverlayTextField (v, ResizableWindow)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_CANCEL, "Cancel"); // a (C, ResizableWindow)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, slot_0 : axis_fifo_0_M00_AXIS : Interface, slot_0 : axis_fifo_0_M00_AXIS : T Channel, slot_0 : axis_fifo_0_M00_AXIS : TREADY]", 3, false); // a (r, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,879 MB. GUI used memory: 197 MB. Current time: 5/11/20, 2:40:29 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 18 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,879 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:41:01 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,879 MB. GUI used memory: 192 MB. Current time: 5/11/20, 2:41:05 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 14 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,879 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:41:11 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 293, 230); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,879 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:41:19 PM SRET
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 294, 216, false, false, false, true, false); // n (o, cp) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu((HResource) null, "Cursors"); // ac (al, cp)
+selectMenu((HResource) null, "Markers"); // ac (al, cp)
+selectMenu((HResource) null, "Cursors"); // ac (al, cp)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 232, 324); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 250, 274); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton((HResource) null, "Waveform Viewer_settings"); // u (f, cp): TRUE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 578, 250); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,879 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:41:33 PM SRET
+selectButton((HResource) null, "Waveform Viewer_settings"); // u (f, cp): FALSE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 654, 375); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,879 MB. GUI used memory: 203 MB. Current time: 5/11/20, 2:41:35 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,879 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:42:25 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,879 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:42:27 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 195 MB. Current time: 5/11/20, 2:42:31 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 71 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 189, 200, false, false, false, true, false); // n (o, cp) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenuItem((HResource) null, "Out"); // af (al, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:42:58 PM SRET
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 190, 241); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:42:59 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:43:00 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:43:00 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 743, 254); // n (o, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:43:03 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:43:08 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:43:10 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 197 MB. Current time: 5/11/20, 2:43:10 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:43:11 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:43:20 PM SRET
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_CURSOR, "Waveform Viewer_waveformgotocursor"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 461, 108); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:43:34 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 446, 299); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:43:36 PM SRET
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 461, 130); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:43:39 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 186 MB. Current time: 5/11/20, 2:43:39 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,880 MB. GUI used memory: 178 MB. Current time: 5/11/20, 3:07:31 PM SRET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 2351 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/003017AC8218A (2) ; Open", 1, "xilinx_tcf/Digilent/003017AC8218A (2)", 0, true); // t (Q, cp) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/003017AC8218A (2) ; Open", 1, "xilinx_tcf/Digilent/003017AC8218A (2)", 0, true, false, false, false, true, false); // t (Q, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_TARGET, "Close Target"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_TARGET
+// A (cp): Close Target: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+// TclEventType: HW_TARGET_CLOSE
+dismissDialog("Close Target"); // A (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// WARNING: HEventQueue.dispatchEvent() is taking  1196 ms.
+// TclEventType: HW_OBJECT_DELETE
+// Tcl Message: close_hw_target {localhost:3121/xilinx_tcf/Digilent/003017AC8218A} 
+// Tcl Message: INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/003017AC8218A 
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SYSMON_DELETE
+// bx (cp):  Close Target : addNotify
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+dismissDialog("Close Target"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 547 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.srcs/sources_1/bd/system_top/system_top.bd} 
+dismissDialog("Open Block Design"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (Q, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (cp): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1879 ms.
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6, true); // L (C, F) - Node
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (C, F)
+// Elapsed time: 14 seconds
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_async_fifo_1.0", 2); // cw (Q, F)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, F)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// bx (cp):  Refresh All IP Repositories : addNotify
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0'. 
+dismissDialog("Refresh All IP Repositories"); // bx (cp)
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "/home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0", 2); // cw (Q, F)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, F)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 259 MB (+2640kb) [01:32:37]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0'. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_async_fifo_1.0 /home/twinborn/Data/FPGA/PYNQ/ip_repo/axi_fifo_1.0} [current_project] 
+dismissDialog("Settings"); // F (cp)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0'. 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // r (cp)
+// Elapsed time: 27 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 391, 132, 1150, 601, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cp): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (cp):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name axis_fifo_v1_0_project -directory /home/twinborn/Data/FPGA/PYNQ/AXIStream/AXIStreamTest.tmp/axis_fifo_v1_0_project /home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2505 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 9306.582 ; gain = 0.000 ; free physical = 191 ; free virtual = 9646 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axistream_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/twinborn/Data/FPGA/PYNQ/ip_repo/axis_fifo_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 9306.582 ; gain = 0.000 ; free physical = 184 ; free virtual = 9640 
+// 'i' command handler elapsed time: 9 seconds
+dismissDialog("Edit in IP Packager"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,904 MB. GUI used memory: 189 MB. Current time: 5/11/20, 3:33:37 PM SRET
+// Elapsed time: 47 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_fifo_v1_0 (axis_fifo_v1_0.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_fifo_v1_0 (axis_fifo_v1_0.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axis_fifo_v1_0 (axis_fifo_v1_0.v)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 230 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 454, 124); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 299, 263); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 299, 263, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 144, 293); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 144, 293, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 144, 302); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 144, 302, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 160, 331); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 157, 325); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 157, 325, false, false, false, false, true); // cl (w, cp) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 221, 127); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 221, 127, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 308, 129); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 308, 129, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 331, 104); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 345, 109); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 345, 109, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 97, 385); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 97, 385, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 120, 37); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 120, 37, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 40 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 174, 159); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 174, 159, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 45 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 224, 233); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 224, 233, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 133, 243); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 133, 243, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 313, 230); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 313, 230, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 68 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 516, 233); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 516, 233, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 300, 53); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 300, 53, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 515 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 289, 277); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 289, 277, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 160, 127); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 160, 127, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 425, 128); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 425, 128, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 170, 139); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 170, 139, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 475, 142); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 475, 142, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 182, 161); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 182, 161, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 169, 179); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 169, 179, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 420, 173); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 420, 173, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 167, 187); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 167, 187, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 466, 190); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 466, 190, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 144, 204); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 144, 204, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 188, 235); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 188, 235, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 348, 231); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 348, 231, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 221, 236); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 221, 236, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 165, 113); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 166, 112, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 49 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 99, 262); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 99, 262, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 114 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 309, 139); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 309, 139, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 222, 141); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 222, 141, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 225, 162); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 225, 162, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 474, 157); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 474, 157, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 69 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 276, 186); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 276, 186, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 270, 170); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 270, 170, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 409, 167); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 409, 167, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 94, 198); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 94, 198, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 268, 205); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 268, 205, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 202 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 288, 94); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 625, 202); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 396, 189); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 427, 245); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 39, 230); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 39, 230, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 41, 246); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 41, 246, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 63, 260); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 63, 260, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 298, 116); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 298, 116, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 188, 112); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 188, 112, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 93 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 146, 265); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 146, 265, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 359, 83); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 359, 83, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 184, 81); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 184, 81, false, false, false, false, true); // cl (w, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 3,914 MB. GUI used memory: 191 MB. Current time: 5/11/20, 4:03:37 PM SRET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,914 MB. GUI used memory: 189 MB. Current time: 5/11/20, 4:33:37 PM SRET
+// Elapsed time: 2472 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 149, 312); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 149, 312, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 145, 329); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 145, 329, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 144, 384); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 144, 384, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 399, 243); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 399, 243, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 261, 249); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 261, 249, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 105, 78); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 105, 78, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 177, 81); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 362, 86); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 362, 86, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 102, 81); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 102, 81, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 228, 82); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 228, 82, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 356, 81); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 356, 81, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 92, 94); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 92, 94, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 226, 98); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 226, 98, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 338, 100); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 338, 100, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 101, 82); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 101, 82, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 76 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 341, 97); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 341, 97, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 148, 136); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 148, 136, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 409, 425); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 409, 425, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 300, 425); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 300, 425, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 404, 430); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 404, 430, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 269, 440); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 269, 440, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 112, 447); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 112, 447, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 18, 249); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 17, 248, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 60, 150); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 60, 150, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 174, 159); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 174, 159, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 123, 193); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 123, 193, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 167, 278); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 167, 278, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 61, 408); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 61, 408, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 124, 292); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 124, 292, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 280, 292); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 280, 292, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 123, 294); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 123, 294, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 288, 295); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 288, 295, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 280, 336); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 280, 336, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 141, 341); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 135, 352); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 135, 352, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 155, 171); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 155, 171, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 142, 227); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 142, 227, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 97, 259); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 97, 259, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 298, 264); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 298, 264, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 129, 261); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 129, 261, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 269, 286); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 269, 286, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 47 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 327, 458); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 327, 458, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 254, 320); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 254, 322, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 115, 324); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 115, 324, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 154, 320); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 154, 320, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 110, 334); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 110, 334, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 151, 355); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 151, 355, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 307, 384); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 307, 384, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 120, 383); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 120, 383, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 93, 428); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 93, 428, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 217, 444); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 217, 444, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 124, 260); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 124, 260, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 240, 442); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 240, 442, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 314, 172); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 314, 172, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 245, 261); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 245, 261, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 104, 446); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 104, 446, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 284, 264); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 284, 264, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 265, 113); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 265, 113, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 263, 95); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 263, 95, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 226, 86); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 226, 86, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 358, 212); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 357, 212, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 127 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 71, 263); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 71, 263, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 182, 263); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 182, 263, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 81 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 228, 40); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 228, 40, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 211 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 194, 381); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 194, 381, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 107, 216); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 107, 216, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 125, 368); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 125, 368, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 125, 401); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 125, 401, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 111, 386); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 111, 386, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 104, 221); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 104, 221, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 184, 245); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 184, 245, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 101, 249); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 101, 249, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 105, 267); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 105, 267, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("axis_fifo_v1_0.v", 161, 339); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 161, 339, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("axis_fifo_v1_0.v", 64, 171); // cl (w, cp)
+selectCodeEditor("axis_fifo_v1_0.v", 64, 171, false, false, false, false, true); // cl (w, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 3,914 MB. GUI used memory: 189 MB. Current time: 5/11/20, 5:03:37 PM SRET
