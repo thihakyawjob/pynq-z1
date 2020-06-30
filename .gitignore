@@ -17,3 +17,4 @@ AXIStream/AXIStreamTest.sdk/.metadata/*
 AXIStream/AXIStreamTest.sdk/fifo_test_bsp/*
 AXIStream/AXIStreamTest.sdk/helloworld_bsp/*
 ip_repo/edit_axistream_v1_0.cache/*
+/.project
