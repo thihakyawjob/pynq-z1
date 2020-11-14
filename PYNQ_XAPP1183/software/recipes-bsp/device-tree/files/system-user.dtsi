@@ -1,0 +1,10 @@
+/include/ "system-conf.dtsi"
+/ {
+};
+
+&xadc_wiz_0 {
+	compatible = "xlnx,axi-xadc-dma";
+	dmas = <&axi_dma_0 0>;
+	dma-names = "axidma1";
+	reg = <0x43c00000 0x10000 0x43c10000 0x10000 >;
+};
