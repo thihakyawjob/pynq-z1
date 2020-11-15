@@ -1003,8 +1003,8 @@ proc create_root_design { parentCell } {
   # Create instance: xadc_axis_fifo_adapt_0, and set properties
   set xadc_axis_fifo_adapt_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:xadc_axis_fifo_adapter:1.0 xadc_axis_fifo_adapt_0 ]
   set_property -dict [ list \
-   CONFIG.C_BASEADDR {0x40410000} \
-   CONFIG.C_HIGHADDR {0x4041FFFF} \
+   CONFIG.C_BASEADDR {0x43C10000} \
+   CONFIG.C_HIGHADDR {0x43C1FFFF} \
  ] $xadc_axis_fifo_adapt_0
 
   # Create instance: xadc_wiz_0, and set properties
@@ -1046,7 +1046,7 @@ proc create_root_design { parentCell } {
   create_bd_addr_seg -range 0x20000000 -offset 0x00000000 [get_bd_addr_spaces axi_dma_0/Data_S2MM] [get_bd_addr_segs processing_system7_0/S_AXI_GP0/GP0_DDR_LOWOCM] SEG_processing_system7_0_GP0_DDR_LOWOCM
   create_bd_addr_seg -range 0x01000000 -offset 0xFC000000 [get_bd_addr_spaces axi_dma_0/Data_S2MM] [get_bd_addr_segs processing_system7_0/S_AXI_GP0/GP0_QSPI_LINEAR] SEG_processing_system7_0_GP0_QSPI_LINEAR
   create_bd_addr_seg -range 0x00010000 -offset 0x40400000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_dma_0/S_AXI_LITE/Reg] SEG_axi_dma_0_Reg
-  create_bd_addr_seg -range 0x20000000 -offset 0x60000000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs xadc_axis_fifo_adapt_0/S_AXI/reg0] SEG_xadc_axis_fifo_adapt_0_reg0
+  create_bd_addr_seg -range 0x00010000 -offset 0x43C10000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs xadc_axis_fifo_adapt_0/S_AXI/reg0] SEG_xadc_axis_fifo_adapt_0_reg0
   create_bd_addr_seg -range 0x00010000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs xadc_wiz_0/s_axi_lite/Reg] SEG_xadc_wiz_0_Reg
 
   # Exclude Address Segments

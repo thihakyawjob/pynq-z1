@@ -83,33 +83,34 @@ int main()
 
 
     int command = 0;
-    int serial_fd = -1;
-    struct termios oldtio, newtio;
-    unsigned char uartbuffer[UART_BUF_SIZE];
-    unsigned char newLineFeed[] = { 0xA };
+//    int serial_fd = -1;
+//    struct termios oldtio, newtio;
+//    unsigned char uartbuffer[UART_BUF_SIZE];
+//    unsigned char newLineFeed[] = { 0xA };
     /* Open dev node for reading and writing and not as controlling tty
        because we don't want to get killed if linenoise sends CTRL-C.
      */
-    serial_fd = open(DEV_NODE, O_RDWR | O_NOCTTY);
-    if (serial_fd < 0) {
-	perror(DEV_NODE);
-	exit(XST_FAILURE);
-    }
+//    serial_fd = open(DEV_NODE, O_RDWR | O_NOCTTY);
+//    if (serial_fd < 0) {
+//	perror(DEV_NODE);
+//	exit(XST_FAILURE);
+//    }
 
-    tcgetattr(serial_fd, &oldtio);	/* save current serial port settings */
-    bzero(&newtio, sizeof(newtio));	/* clear struct for new port settings */
-
-    newtio.c_cflag = BAUDRATE | CS8 | CLOCAL | CREAD;
-    newtio.c_iflag = IGNPAR;
-    newtio.c_oflag = 0;
+//    tcgetattr(serial_fd, &oldtio);	/* save current serial port settings */
+//    bzero(&newtio, sizeof(newtio));	/* clear struct for new port settings */
+//
+//    newtio.c_cflag = BAUDRATE | CS8 | CLOCAL | CREAD;
+//    newtio.c_iflag = IGNPAR;
+//    newtio.c_oflag = 0;
 
     /* set input mode (non-canonical, no echo,...) */
-    newtio.c_lflag = 0;
-    newtio.c_cc[VTIME] = 0;	/* inter-character timer unused */
-    newtio.c_cc[VMIN] = 1;	/* blocking read until single charreceived */
+//    newtio.c_lflag = 0;
+//    newtio.c_cc[VTIME] = 0;	/* inter-character timer unused */
+//    newtio.c_cc[VMIN] = 1;	/* blocking read until single charreceived */
+//
+//    tcflush(serial_fd, TCIFLUSH);
+//    tcsetattr(serial_fd, TCSANOW, &newtio);
 
-    tcflush(serial_fd, TCIFLUSH);
-    tcsetattr(serial_fd, TCSANOW, &newtio);
     //Initialize CB
     int testBufferSize = 20;	/* arbitrary size */
     cbInit(&cb, testBufferSize);
@@ -122,46 +123,52 @@ int main()
     }
     while (1) {
 
-	memset(uartbuffer, 0, UART_BUF_SIZE);
-	int r = read(serial_fd, uartbuffer, UART_BUF_SIZE);
+	//Read raw samples
+    cbRead(&cb, &elem);
 
-	if ((uartbuffer[0] == 'R') || (uartbuffer[0] == 'r')) {
-	    command = (AsciiToHex(uartbuffer[4]) << 4) +
-				AsciiToHex(uartbuffer[5]);
-	    switch (command) {
 
-	    case RAW_DATA_REG:
-		//Read raw samples
-		cbRead(&cb, &elem);
-		write(serial_fd, elem.buf, FIFO_SIZE);
-		tcdrain(serial_fd);
-		write(serial_fd, &newLineFeed, 1);
-		break;
+	//////////////////////////////////THIHA KYAW//////////////////////////////////////////
 
-	    case CONNECTION_EST_REG:
-		//Dummy data for design version register
-		write(serial_fd, uartbuffer, r);
-		break;
-	    }
+//	memset(uartbuffer, 0, UART_BUF_SIZE);
+//	int r = read(serial_fd, uartbuffer, UART_BUF_SIZE);
 
-	} else if ((uartbuffer[0] == 'E') || (uartbuffer[0] == 'e')) {
-	    capture_flag = 0;
-	    pthread_join(t_datacapture, NULL);
-	    printf("Exiting application :v1 \n");
-	    break;
-	} else if ((uartbuffer[0] == 'W') || (uartbuffer[0] == 'w')) {
-	    uartbuffer[0] = 'O';
-	    uartbuffer[1] = 'K';
-	    uartbuffer[2] = 0xa;
-	    r = 3;
-	    write(serial_fd, uartbuffer, r);
-	}
+//	if ((uartbuffer[0] == 'R') || (uartbuffer[0] == 'r')) {
+//	    command = (AsciiToHex(uartbuffer[4]) << 4) +
+//				AsciiToHex(uartbuffer[5]);
+//	    switch (command) {
+//
+//			case RAW_DATA_REG:
+//			//Read raw samples
+//			cbRead(&cb, &elem);
+//			write(serial_fd, elem.buf, FIFO_SIZE);
+//			tcdrain(serial_fd);
+//			write(serial_fd, &newLineFeed, 1);
+//			break;
+//
+//			case CONNECTION_EST_REG:
+//			//Dummy data for design version register
+//			write(serial_fd, uartbuffer, r);
+//			break;
+//			}
+//
+//		} else if ((uartbuffer[0] == 'E') || (uartbuffer[0] == 'e')) {
+//			capture_flag = 0;
+//			pthread_join(t_datacapture, NULL);
+//			printf("Exiting application :v1 \n");
+//			break;
+//		} else if ((uartbuffer[0] == 'W') || (uartbuffer[0] == 'w')) {
+//			uartbuffer[0] = 'O';
+//			uartbuffer[1] = 'K';
+//			uartbuffer[2] = 0xa;
+//			r = 3;
+//			write(serial_fd, uartbuffer, r);
+//		}
     }
     //restore old terminal settings
     //Free the buffer
     cbFree(&cb);
-    tcsetattr(serial_fd, TCSANOW, &oldtio);
-    close(serial_fd);
+/*    tcsetattr(serial_fd, TCSANOW, &oldtio);
+    close(serial_fd);*/
     return EXIT_SUCCESS;
 
 }
