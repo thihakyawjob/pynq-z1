@@ -8,4 +8,8 @@ Xilinx Tutorial can be found in the following link:
 
 https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18842415/AnalogDataAcquistion_AXI_XADC
 
+### DMA Block Settings
+
+![DMA Block](https://github.com/thihakyawjob/pynq-z1/blob/master/PYNQ_XAPP1183/vivado/DMASettings.png)
+
 
